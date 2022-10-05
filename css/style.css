@@ -1,0 +1,107 @@
+@keyframes myCoolAnimation {
+    0%{
+        width: 100px;
+        background-color: aqua;
+    }
+    50%{
+        width: 500px;
+        background-color: blue;
+    }
+    100%{
+        width: 100px;
+        background-color: brown;
+    }
+    
+}
+
+@keyframes  scaryface{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 500px;
+    }
+    100%{
+        width: 100px;
+    }
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: bisque;
+}
+
+header{
+    display: grid;
+    justify-items: start;
+}
+
+header > img{
+    height: 25vh;
+}
+
+header >img:hover{
+    animation: myCoolAnimation 3s ease-in-out;
+}
+
+h1{
+    font-size: 2em;
+    color: blueviolet;
+    transition: color 2s ease-in-out;
+}
+
+h1:hover{
+    font-size: 5em;
+    color: yellow;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+}
+
+main >img{
+    height: 35vh;
+    border-radius: 35%;
+}
+
+main >img:hover{
+    animation: scaryface 3s ease-in-out;
+}
+
+main >a{
+    font-size: 3em;
+    color: red;
+    transition: color 3s ease-in-out;
+}
+
+main >a:hover{
+    font-size: 6em;
+    color: black;
+}
+
+footer{
+    display: grid;
+    height: 25vh;
+    align-content: center;
+    justify-items: center;
+}
+
+footer >a{
+    text-decoration: none;
+    font-size: 3em;
+    color: orange;
+    transition: color 2s ease-in;
+}
+
+footer >a:hover{
+    font-size: 5em;
+    color: rgb(100, 150, 80);
+    border: 3px gray dashed;
+    background-color: black;
+}
